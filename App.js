@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Link } from 'react-native';
 import Card from "./assets/components/Card";
-
+import { Link } from 'expo-router';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -10,8 +10,8 @@ export default function App() {
       </View>
      <Card></Card>
      <Card></Card>
-
-      <StatusBar style="auto" />
+     <Link href="/routes/Rollos/Rollos.js">About</Link>
+      <StatusBar style="light" backgroundColor='black' />
     </View>
   );
 }

@@ -28,8 +28,9 @@ const Card = () => {
         innerCircleBorderWidth={1}
         /*color del background del texto dentro del grafico */
         innerCircleBorderColor="#2d2c3a"
-        innerRadius={99}
+        innerRadius={66}
         data={pieData}
+        radius={80}
         centerLabelComponent={() => {
           return (
             <View style={styles.containerNumber}>
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#2d2c3a",
     width: "90%",
     padding: 18,
-    paddingTop:50,
+    paddingTop:40,
     borderRadius: 10,
 
     alignItems: "center",
@@ -70,11 +71,11 @@ const styles = StyleSheet.create({
   },
   containerTitleCard:{
     backgroundColor:"#FF7669",
-    width:"50%",
+    width:"auto",
     position:"absolute",
     left:0,
     top:0,
-    padding:12,
+    padding:8,
     borderTopLeftRadius:10,
     borderBottomRightRadius:20,
    
@@ -83,12 +84,12 @@ const styles = StyleSheet.create({
   containerNumber:{
     alignItems:"center",
   },titleNumber:{
-    fontSize:50,
+    fontSize:30,
     color: "white",
   },subTitleNumber:{
     color: "white",
 
-    fontSize:20,
+    fontSize:15,
   }
 
 });
